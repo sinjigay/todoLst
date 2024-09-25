@@ -41,10 +41,10 @@ export default class Todo extends React.Component {
         />
         <div className="flex flex-col flex-grow">
           <div className="flex flex-row justify-between">
-            <p className="break-words whitespace-normal">{task}</p>
-            <p className="whitespace-nowrap text-slate-400">{creationTime}</p>
+            <p className="break-all">{task}</p>
+            <p className="whitespace-nowrap text-slate-400 text-xs ml-3">{creationTime}</p>
           </div>
-          <p className="text-slate-400 break-words whitespace-normal">{subtitle}</p>
+          <p className="break-all">{subtitle}</p>
         </div>
         {isHovered && (
           <button
